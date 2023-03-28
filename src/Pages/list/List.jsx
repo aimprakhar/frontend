@@ -22,7 +22,7 @@ export const List = () => {
 
 
 
-  const{data,loading,error,reFetch}=useFetch(`http://localhost:8700/api/hotels/find?city=${destination}&min=${min||1}&max=${max||9999}`);
+  const{data,loading,error,reFetch}=useFetch(`https://backend-54ic.onrender.com/api/hotels/find?city=${destination}&min=${min||1}&max=${max||9999}`);
 
   const handleBtnCLick=()=>{
     // localhost:8800/api/hotels/find?city=madrid&min=300&max=800
