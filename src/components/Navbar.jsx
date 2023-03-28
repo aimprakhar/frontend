@@ -14,6 +14,9 @@ export const Navbar = () => {
   const login=()=>{
     navigate("/login");
   }
+  const register=()=>{
+    navigate("/register");
+  }
 
   const logout=()=>{
     dispatch({type:"LOGOUT"})
@@ -38,7 +41,7 @@ export const Navbar = () => {
         
         
         ):(<div className="navitem">
-        <button className="navButton">Register</button>
+        <button onClick={register} className="navButton">Register</button>
         <button onClick={login}  className="navButton">Login</button>
       </div>)}
      

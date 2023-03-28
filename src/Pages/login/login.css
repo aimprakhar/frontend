@@ -1,6 +1,7 @@
 
 .Login{
-    padding-top:15%
+    padding-top:15%;
+    
 }
 .lcontainer{
     width:40%;
@@ -35,4 +36,20 @@ gap:10px;
 .lButton:disabled{
 background-color: #0071c28c;
 cursor: not-allowed;
+}
+
+
+.red{
+    color:red;
+}
+
+h6{
+    padding :10%;
+}
+
+.green{
+    color:green;
+}
+.bgreen{
+    background-color: green;
 }

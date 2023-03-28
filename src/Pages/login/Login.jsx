@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useContext, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { Navbar } from '../../components/Navbar'
 import { AuthContext } from '../../context/AuthContext'
 import "./login.css"
 
@@ -40,12 +41,14 @@ dispatch({type:"LOGIN_FAILURE",payload:err.response.data})
 
 
   return (
+    <> 
+    <Navbar/>
     <div className='Login'>
         <div className="lcontainer">
           <input type="text" placeholder='Username' id="username" onChange={handleChange} className="lInput" />
           <input type="password" placeholder='Password' id="password" onChange={handleChange} className="lInput" />
 
-          <button disabled={loading} onClick={handleClick} className="lButton">Login</button>
+          <button disabled={loading} onClick={handleClick} className="lButton bgreen">Login</button>
            {error&&<span>{error.message}</span>}
 
 
@@ -54,10 +57,11 @@ dispatch({type:"LOGIN_FAILURE",payload:err.response.data})
 
         </div>
         
-        
+        <h6><span className="red">NOTE:</span>Aftter successfull Login you will be redirected to <span className="green">HOME</span> page</h6>
         
         
         </div>
+        </>
   )
 }
 

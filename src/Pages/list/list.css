@@ -101,4 +101,13 @@ margin-top: 20px;
         flex-direction: column;
     
     }
+
+    .listSearch{
+      
+        position:static;
+        top:10px;
+        height:max-content;
+    
+    
+    }
 }
