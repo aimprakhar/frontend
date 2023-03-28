@@ -27,7 +27,7 @@ const handleClick=async e=>{
 
 try{
 
-  const res=await axios.post("http://localhost:8700/api/auth/register",credentials)
+  const res=await axios.post("https://backend-54ic.onrender.com/api/auth/register",credentials)
  
 }
 catch(err){

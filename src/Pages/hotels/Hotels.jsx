@@ -42,7 +42,7 @@ const location=useLocation();
   const id=location.pathname.split("/")[3];
 
 
-   const{data,loading,error}=useFetch(`http://localhost:8700/api/hotels/find/${id}`);
+   const{data,loading,error}=useFetch(`https://backend-54ic.onrender.com/api/hotels/find/${id}`);
    const {dates}=useContext(SearchContext);
 
    const {user}=useContext(AuthContext);

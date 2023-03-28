@@ -5,7 +5,7 @@ import "./propertyList.css"
 
 export const PropertyList = () => {
 
-     const {data,loading,error}=useFetch("/hotels/countByTypee");
+     const {data,loading,error}=useFetch("https://backend-54ic.onrender.com/api/hotels/countByTypee");
     // console.log("from here")
     // console.log(data);
     // console.log(data);
